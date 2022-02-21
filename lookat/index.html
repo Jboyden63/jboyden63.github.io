@@ -43,15 +43,16 @@ m<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #soccer" 
 	    <a-entity position="0 0 0" gltf-model="models/ball.glb" rotation="0 -90 0" scale="1 1 1"> 
       ></a-box> 
-     <a-box
-        position="2 2 2.5"
-        scale=".4 .4 .4" 
-        rotation="0 90 0"
-        value="One O'Clock"
+<a-box
+        position="0 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #discgolf"   
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #frisbee" 
 	    <a-entity position="0 0 0" gltf-model="models/frisbee.glb" rotation="0 -90 0" scale="1 1 1"> 
       ></a-box> 
+     
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
