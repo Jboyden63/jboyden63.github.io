@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
   <head>
     <meta charset="utf-8" />
     <title>Models on Markers</title>
@@ -10,22 +8,13 @@
   
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
- <!--  
-      <a-marker preset="hiro">  
-       <a-entity position="0 0 0" gltf-model="models/iceberg.glb" rotation="0 90 0" scale="1 1 1">
-    </a-entity>
-      </a-marker>  
-     
-      <a-marker preset="kanji">  
-       <a-entity position="0 0 0" gltf-model="models/hourglass.glb" rotation="-90 360 0" scale="1 1 1">
-    </a-entity>
-      </a-marker>  
--->        
-      <a-marker id="zb" type="pattern" url="markers/patt.zb">
-        <a-entity position="0 0 0" gltf-model="models/scifigrenade.glb" rotation="-90 360 0" scale=".3 .3 .3">
-        </a-entity>
-      </a-marker>  
-    
+
+      <a-marker preset="hiro">
+          <a-sphere radius=".5" material="opacity: 0.7;" color="red" position="0 1 0"></a-sphere>
+          <a-entity position="0 0 0" gltf-model="models/hourglass.glb" rotation="0 90 0" scale="1 1 1">
+          </a-entity>
+      </a-marker>
+        
      <a-entity camera></a-entity>
     </a-scene>
   </body>
